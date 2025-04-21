@@ -1,5 +1,6 @@
-"use client"
-import { useState } from 'react';
+"use client";
+import { useState } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,11 +10,7 @@ const Navbar = () => {
       <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <a href="#">
-            <img
-              className="w-auto h-6 sm:h-7"
-              src="https://merakiui.com/images/full-logo.svg"
-              alt=""
-            />
+            <Image src="/logo.png" alt="logo" width={100} height={100} />
           </a>
 
           {/* Mobile menu button */}
@@ -62,7 +59,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div
           className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
-            isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'
+            isOpen ? "translate-x-0 opacity-100" : "opacity-0 -translate-x-full"
           }`}
         >
           <div className="flex flex-col md:flex-row md:mx-6">
