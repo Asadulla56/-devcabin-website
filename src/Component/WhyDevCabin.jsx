@@ -38,15 +38,21 @@ export default function WhyDevCabin() {
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
           {features.map((feature, i) => (
             <div
-              key={i}
-              className="bg-gray-900 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
-            >
-              <div className="flex justify-center mb-4">
-                {feature.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-white">{feature.title}</h3>
-              <p className="text-sm text-gray-400 mt-2">{feature.desc}</p>
+            key={i}
+            className="relative bg-gray-900 p-6 rounded-2xl shadow-sm transition duration-300 group"
+          >
+            <div className="flex justify-center mb-4">
+              {feature.icon}
             </div>
+            <h3 className="text-xl font-semibold text-white">{feature.title}</h3>
+            <p className="text-sm text-gray-400 mt-2">{feature.desc}</p>
+          
+            {/* Hover border animation */}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-400 rounded-full transition-all duration-300 group-hover:w-full" />
+<span className="absolute bottom-0 right-0 w-0.5 h-0 bg-indigo-400 rounded-full transition-all duration-300 group-hover:h-full" />
+
+          </div>
+          
           ))}
         </div>
       </div>
