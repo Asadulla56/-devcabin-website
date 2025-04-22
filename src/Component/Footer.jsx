@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 pt-12 px-6">
@@ -86,20 +87,20 @@ const Footer = () => {
             <h4 className="text-blue-400 font-semibold mb-3">Connect</h4>
             <div className="flex gap-4 mb-4">
               <a href="#" className="hover:text-blue-400">
-                FB
+              <FaFacebook/>
               </a>
               <a href="#" className="hover:text-blue-400">
-                X
+              <FaInstagram/>
               </a>
               <a href="#" className="hover:text-blue-400">
-                IN
+              <FaLinkedin/>
               </a>
             </div>
             <form>
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-3 py-2 text-black rounded mb-2"
+                className="w-full px-3 py-2 text-white rounded mb-2"
               />
               <button
                 type="submit"
@@ -125,7 +126,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-5 text-center text-xs text-gray-400">
           <p>
             © <span className="text-yellow-400">2025</span>{" "}
-            <span className="text-blue-500 font-semibold">codeBari</span>.{" "}
+            <span className="text-blue-500 font-semibold">Dev Cabin</span>.{" "}
             <span className="text-pink-400">All</span> rights reserved.
           </p>
           <p className="mt-2">
