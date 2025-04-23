@@ -27,7 +27,7 @@ const features = [
 
 export default function WhyDevCabin() {
   return (
-    <section className="py-16 bg-gradient-to-br from-black via-gray-900 to-gray-800">
+    <section className="py-16 bg-gradient-to-br from-gray-800 via-gray-800 to-gray-700">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-4">
           Why DevCabin?
