@@ -1,7 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import { FaSearch, FaPencilRuler, FaCode, FaRocket } from "react-icons/fa";
-
+import laptoplottie from "../../public/Animation - 1745403539000.json"
+import Lottie from "lottie-react";
 const steps = [
   {
     icon: <FaSearch className="w-6 h-6 text-indigo-500" />,
@@ -27,7 +28,7 @@ const steps = [
 
 export default function OurProcess() {
   return (
-    <section className="bg-black text-white py-20">
+    <section className="bg-black text-white py-20 grid grid-cols-2">
       <div className="max-w-4xl mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -59,6 +60,9 @@ export default function OurProcess() {
             </motion.div>
           ))}
         </div>
+      </div>
+      <div>
+      <Lottie animationData={laptoplottie}></Lottie>
       </div>
     </section>
   );
