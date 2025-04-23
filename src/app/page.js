@@ -3,17 +3,15 @@ import Navber from "@/Component/Navber";
 import Hero from "@/Component/Hero";
 import WhyDevCabin from "@/Component/WhyDevCabin";
 import WhatWeOffer from "@/Component/WhatWeOffer";
+import OurProcess from "@/Component/OurProcess";
 export default function Home() {
   return (
-   <>
-   <Navber/>
-   <Hero/>
-   <WhyDevCabin/>
-   <WhatWeOffer/>
-   
-   
-   
-
-   </>
+    <>
+      <Navber />
+      <Hero />
+      <WhyDevCabin />
+      <WhatWeOffer />
+      <OurProcess />
+    </>
   );
 }
