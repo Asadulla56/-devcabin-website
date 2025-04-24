@@ -8,7 +8,7 @@ import CalltoAction from "@/Component/CalltoAction";
 export default function Home() {
   return (
     <>
-      <section className="bg-black">
+      <section className="bg-black mb-10">
       <Navber />
       <Hero />
       <WhyDevCabin />
