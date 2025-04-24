@@ -1,8 +1,10 @@
 "use client";
 import Hero from "@/Component/Hero";
 import { motion } from "framer-motion";
-import Image  from 'next/image';
-import img1 from '../../../public/4884785.jpg'
+import aboutlottie from "../../../public/Animation - 1745506161787.json"
+import aboutlottie2 from "../../../public/Animation - 1745505464078.json"
+
+import Lottie from "lottie-react";
 export default function AboutPage() {
   return (
     <main className="bg-black text-white min-h-screen ">
@@ -11,9 +13,9 @@ export default function AboutPage() {
 
       <section className="grid grid-cols-2">
 
-      <div className="rounded-full">
-        <Image src={img1} alt="img1" className="rounded-xl" ></Image>
-
+      <div className="">
+      <Lottie animationData={aboutlottie}></Lottie>
+       
       </div>
       <div>
       <section className="mb-20 relative">
@@ -64,7 +66,8 @@ export default function AboutPage() {
       {/* About DevCabin with Image */}
      <section className="grid grid-cols-2">
         <div>
-            <h1>this is image side</h1>
+        <Lottie animationData={aboutlottie2}></Lottie>
+       
         </div>
      <div className="mb-20 relative">
         <motion.h2
