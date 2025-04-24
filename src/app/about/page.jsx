@@ -1,15 +1,18 @@
 "use client";
-import Hero from "@/Component/Hero";
+
 import { motion } from "framer-motion";
+import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import aboutlottie from "../../../public/Animation - 1745506161787.json"
 import aboutlottie2 from "../../../public/Animation - 1745505464078.json"
 
 import Lottie from "lottie-react";
+import Link from "next/link";
 export default function AboutPage() {
   return (
     <main className="bg-black text-white min-h-screen ">
       {/* Hero */}
      <section className="flex flex-col items-center justify-center text-center py-24 px-4 bg-gradient-to-b from-black via-gray-900 to-black text-white">
+        <h3 className="text-2xl font-bold my-5 text-blue-300">About</h3>
   <motion.h1
     className="text-2xl md:text-3xl font-extrabold mb-6 leading-tight"
     initial={{ opacity: 0, y: -50 }}
@@ -29,14 +32,15 @@ export default function AboutPage() {
     growth. Every line of code reflects our passion for simplicity,
     performance, and creativity.
   </motion.p>
-  <motion.button
-    className="mt-6 px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full text-base md:text-lg font-medium transition-all duration-300"
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ delay: 0.5, duration: 0.7 }}
-  >
-    Discover More
-  </motion.button>
+  
+  <Link
+            href="/about"
+            className="bg-white rounded-full px-7 py-3  "
+          >
+            <AnimatedShinyText >Contact us </AnimatedShinyText> 
+          </Link>
+          
+  
 </section>
 
 
