@@ -1,6 +1,6 @@
 "use client";
 import Hero from "@/Component/Hero";
-
+import { motion } from "framer-motion";
 import aboutlottie from "../../../public/Animation - 1745506161787.json"
 import aboutlottie2 from "../../../public/Animation - 1745505464078.json"
 
@@ -9,7 +9,36 @@ export default function AboutPage() {
   return (
     <main className="bg-black text-white min-h-screen ">
       {/* Hero */}
-      <Hero/>
+     <section className="flex flex-col items-center justify-center text-center py-24 px-4 bg-gradient-to-b from-black via-gray-900 to-black text-white">
+  <motion.h1
+    className="text-2xl md:text-3xl font-extrabold mb-6 leading-tight"
+    initial={{ opacity: 0, y: -50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+  >
+     Empowering Brands with Modern Web Solutions
+  </motion.h1>
+  <motion.p
+    className="text-lg md:text-xl max-w-3xl text-gray-400 mx-auto mb-10"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.2 }}
+  >
+    At DevCabin, we specialize in building modern, clean, and scalable web
+    solutions that elevate your digital presence and drive real business
+    growth. Every line of code reflects our passion for simplicity,
+    performance, and creativity.
+  </motion.p>
+  <motion.button
+    className="mt-6 px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full text-base md:text-lg font-medium transition-all duration-300"
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ delay: 0.5, duration: 0.7 }}
+  >
+    Discover More
+  </motion.button>
+</section>
+
 
       <section className="grid grid-cols-2">
 
