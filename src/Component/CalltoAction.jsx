@@ -16,7 +16,7 @@ const CalltoAction = () => {
 
         {/* Input Field */}
         <div className="flex-1">
-          <div className="flex flex-col sm:flex-row bg-white rounded-full overflow-hidden shadow-md border border-indigo-200">
+          <div className="flex  bg-white rounded-full overflow-hidden shadow-md border border-indigo-200">
             <input
               type="email"
               placeholder="you@devmail.com"

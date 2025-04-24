@@ -7,13 +7,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         {/* Logo & Tagline */}
         <div className="text-center mb-10">
-          <div className="bg-white p-2 inline-block rounded">
+          <div className=" p-2 inline-block rounded">
             <img src="/logo.png" alt="Logo" className="w-24 h-auto mx-auto" />
           </div>
-          <p className="text-blue-500 text-sm">
-            Building Web Experiences That{" "}
-            <span className="text-pink-400 font-semibold">Work</span>
-          </p>
+         
         </div>
 
         {/* Footer Columns */}
@@ -100,7 +97,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-3 py-2 text-white rounded mb-2"
+                className="w-full px-3 py-2 text-white rounded-4xl mb-2 border border-blue-100"
               />
               <button
                 type="submit"

@@ -28,7 +28,7 @@ const steps = [
 
 export default function OurProcess() {
   return (
-    <section className="bg-black text-white py-20 grid grid-cols-2">
+    <section className="bg-black text-white py-20 grid md:grid-cols-2  grid-cols-1">
       <div className="max-w-4xl mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
