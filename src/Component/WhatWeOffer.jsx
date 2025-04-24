@@ -1,3 +1,5 @@
+"use client";
+
 // components/WhatWeOffer.jsx
 
 import React from "react";
