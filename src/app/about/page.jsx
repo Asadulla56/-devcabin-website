@@ -1,26 +1,22 @@
 "use client";
+import Hero from "@/Component/Hero";
 import { motion } from "framer-motion";
-
+import Image  from 'next/image';
+import img1 from '../../../public/4884785.jpg'
 export default function AboutPage() {
   return (
-    <main className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen py-16 px-6 md:px-20">
+    <main className="bg-black text-white min-h-screen ">
       {/* Hero */}
-      <section className="text-center mb-20">
-        <motion.h1
-          className="text-4xl md:text-6xl font-bold mb-4"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          We Build Code With Class
-        </motion.h1>
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-          Born in Bangladesh. Built for the world.
-        </p>
-      </section>
+      <Hero/>
 
-      {/* Mission */}
-      <section className="mb-20">
+      <section className="grid grid-cols-2">
+
+      <div className="rounded-full">
+        <Image src={img1} alt="img1" className="rounded-xl" ></Image>
+
+      </div>
+      <div>
+      <section className="mb-20 relative">
         <motion.h2
           className="text-3xl font-semibold mb-4 text-indigo-400 flex items-center justify-center gap-3"
           initial={{ opacity: 0, x: -50 }}
@@ -29,7 +25,8 @@ export default function AboutPage() {
         >
           <i className="fas fa-bullseye"></i> 🧭 Our Mission
         </motion.h2>
-        <p className="text-gray-300 leading-relaxed">
+        
+        <p className="text-gray-300 leading-relaxed relative z-10 max-w-2xl mx-auto">
           To empower small businesses, startups, and individuals in Bangladesh
           and beyond with fast, modern, and affordable websites — built with
           clean code, thoughtful design, and a mission to make the web smarter,
@@ -38,7 +35,7 @@ export default function AboutPage() {
       </section>
 
       {/* Vision */}
-      <section className="mb-20">
+      <section className="mb-20 relative">
         <motion.h2
           className="text-3xl font-semibold mb-4 text-green-400 flex items-center justify-center gap-3"
           initial={{ opacity: 0, x: 50 }}
@@ -47,20 +44,29 @@ export default function AboutPage() {
         >
           <i className="fas fa-eye"></i> 🌟 Our Vision
         </motion.h2>
-        <p className="text-gray-300 leading-relaxed mb-4">
+        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: `url('/path/to/vision-image.jpg')` }}></div>
+        <p className="text-gray-300 leading-relaxed relative z-10 mb-4 max-w-2xl mx-auto">
           To grow from a passionate agency into a trusted tech company — 
           delivering modern, elegant, and scalable web solutions from Bangladesh
           to the world.
         </p>
-        <ul className="list-disc list-inside text-gray-400 space-y-2 pl-2">
+        <ul className="list-disc list-inside text-gray-400 space-y-2 pl-2 relative z-10">
           <li>Become a recognized digital brand within 1–2 years</li>
           <li>Offer full-service web development</li>
           <li>Serve global clients with clean, scalable code</li>
         </ul>
       </section>
+      </div>
 
+      </section>
+      {/* Mission */}
+      
       {/* About DevCabin with Image */}
-      <section className="mb-20 relative">
+     <section className="grid grid-cols-2">
+        <div>
+            <h1>this is image side</h1>
+        </div>
+     <div className="mb-20 relative">
         <motion.h2
           className="text-3xl font-semibold mb-4 text-yellow-400 flex items-center justify-center gap-3"
           initial={{ opacity: 0, y: 30 }}
@@ -69,8 +75,8 @@ export default function AboutPage() {
         >
           <i className="fas fa-building"></i> 🏠 About DevCabin
         </motion.h2>
-        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: `url('/mnt/data/FireShot Capture 026 - Create Next App - [localhost].png')` }}></div>
-        <div className="relative z-10">
+        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: `url('/path/to/about-image.jpg')` }}></div>
+        <div className="relative z-10 max-w-2xl mx-auto text-center">
           <p className="text-gray-300 leading-relaxed">
             DevCabin is a Bangladesh-based web development agency dedicated to
             helping small businesses, startups, and creators build their digital
@@ -87,10 +93,11 @@ export default function AboutPage() {
             Bangladesh.”
           </blockquote>
         </div>
-      </section>
+      </div>
+     </section>
 
       {/* What We're Doing */}
-      <section className="mb-20">
+      <section className="mb-20 relative">
         <motion.h2
           className="text-3xl font-semibold mb-4 text-pink-400 flex items-center justify-center gap-3"
           initial={{ opacity: 0, x: -50 }}
@@ -99,7 +106,8 @@ export default function AboutPage() {
         >
           <i className="fas fa-cogs"></i> 🛠 What We’re Doing Now
         </motion.h2>
-        <ul className="list-disc list-inside text-gray-400 space-y-2 pl-2">
+        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: `url('/path/to/doing-image.jpg')` }}></div>
+        <ul className="list-disc list-inside text-gray-400 space-y-2 pl-2 relative z-10 max-w-2xl mx-auto">
           <li>Building internal tools and smart workflows</li>
           <li>Creating demo projects and case studies</li>
           <li>Laying down solid systems for faster delivery</li>
@@ -107,7 +115,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Team */}
-      <section className="mb-20">
+      <section className="mb-20 relative">
         <motion.h2
           className="text-3xl font-semibold mb-6 text-blue-400 flex items-center justify-center gap-3"
           initial={{ opacity: 0, x: 50 }}
