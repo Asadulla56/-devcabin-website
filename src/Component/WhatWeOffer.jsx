@@ -27,9 +27,9 @@ const services = [
     desc: "Beautiful and intuitive interfaces that enhance user experience.",
   },
   {
-    icon: <FaMobile className="h-12 w-12 text-indigo-400" />,
-    title: "Mobile Responsive",
-    desc: "Websites that look great on all devices and screen sizes.",
+    icon: <FaTools className="h-12 w-12 text-indigo-400" />,
+    title: "Maintenance & Support",
+    desc: "Ongoing website updates, security checks, and technical support to keep your site running smoothly and securely.",
   },
   {
     icon: <FaSearch className="h-12 w-12 text-indigo-400" />,

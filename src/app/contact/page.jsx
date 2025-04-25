@@ -6,8 +6,13 @@ const Contact = () => {
     <div className="min-h-screen bg-gradient-to-tr from-gray-900 via-gray-800 to-black text-gray-100 px-6 py-20">
       {/* Header Section */}
       <div className="max-w-2xl mx-auto text-center mb-16">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-4">Contact</h1>
-        <p className="text-lg md:text-xl text-gray-400">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-4 relative inline-block">
+          <span className="relative">
+            Contact
+            <span className="absolute left-1/2 -translate-x-1/2 -bottom-1 w-1/5 h-1 bg-blue-400"></span>
+          </span>
+        </h1>
+        <p className="text-lg  text-gray-400">
           Have a project in mind or just want to say hello? We’d love to hear from you.
         </p>
       </div>
@@ -62,7 +67,7 @@ const Contact = () => {
           </div>
           <div className="flex items-start space-x-4">
             <Mail className="text-blue-400" />
-            <p className="text-gray-300">contact@devcabin.com</p>
+            <p className="text-gray-300">devcabin25@gmail.com</p>
           </div>
           <div className="flex items-start space-x-4">
             <Phone className="text-blue-400" />
