@@ -1,10 +1,14 @@
 "use client";
 
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), {
+  ssr: false,
+});
 
 import aboutlottie from "../../../public/Animation - 1745506161787.json";
 import aboutlottie2 from "../../../public/Animation - 1745505464078.json";
 
-import Lottie from "lottie-react";
 import Link from "next/link";
 export default function AboutPage() {
   return (
@@ -32,8 +36,11 @@ export default function AboutPage() {
           performance, and creativity.
         </p>
 
-        <Link href="contact" className="bg-white rounded-full text-blue-400 px-7 py-3  ">
-       Contact us 
+        <Link
+          href="contact"
+          className="bg-white rounded-full text-blue-400 px-7 py-3  "
+        >
+          Contact us
         </Link>
       </section>
 
@@ -100,13 +107,13 @@ export default function AboutPage() {
             </p>
             <p className="text-gray-400 mt-4">
               We believe every brand — no matter how small — deserves a strong,
-              professional online identity. Whether it’s a portfolio, business
+              professional online identity. Whether it's a portfolio, business
               site, or landing page, we design and build with care, creativity,
               and performance in mind.
             </p>
             <blockquote className="italic text-gray-500 mt-4 border-l-4 pl-4 border-indigo-500">
-              “Make high-quality websites accessible and affordable for everyone
-              in Bangladesh.”
+              "Make high-quality websites accessible and affordable for everyone
+              in Bangladesh."
             </blockquote>
           </div>
         </div>
@@ -123,41 +130,57 @@ export default function AboutPage() {
           <i className="fas fa-users"></i> Our Team
         </h2>
         <div className="grid sm:grid-cols-2 gap-6">
-         <a href="https://mubashirbappi.netlify.app/"  target="_blank" rel="noopener noreferrer"> <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
-            <img
-              src="https://i.ibb.co.com/KxV6W9L6/IMG-1075.jpg"
-              alt="Bappi"
-              className="rounded-full w-24 h-24 mb-4 mx-auto"
-            />
-            <h3 className="text-xl font-bold text-white text-center">Bappi</h3>
-            <p className="text-gray-400 text-center">Founder & CEO</p>
-          </div></a>
+          <a
+            href="https://mubashirbappi.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+              <img
+                src="https://i.ibb.co.com/KxV6W9L6/IMG-1075.jpg"
+                alt="Bappi"
+                className="rounded-full w-24 h-24 mb-4 mx-auto"
+              />
+              <h3 className="text-xl font-bold text-white text-center">
+                Bappi
+              </h3>
+              <p className="text-gray-400 text-center">Founder & CEO</p>
+            </div>
+          </a>
           <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
             <img
               src="https://i.ibb.co.com/d42pfkvk/Whats-App-Image-2025-04-25-at-18-34-06-caa19e8b.jpg"
               alt="Azharul"
               className="rounded-full w-24 h-24 mb-4 mx-auto"
             />
-            <h3 className="text-xl font-bold text-white text-center">Azharul Haque</h3>
+            <h3 className="text-xl font-bold text-white text-center">
+              Azharul Haque
+            </h3>
             <p className="text-gray-400 text-center">Co-Founder & COO</p>
           </div>
 
-
-         <a href="https://github.com/Asadulla56" target="_blank" rel="noopener noreferrer">
-         <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
-            <img
-              src="https://i.ibb.co.com/t6qbzJV/Screenshot-2025-04-25-120100.png"
-              alt="Asadullah"
-              className="rounded-full w-24 h-24 mb-4 mx-auto"
-            />
-            <h3 className="text-xl font-bold text-white text-center">Asadullah</h3>
-            <p className="text-gray-400 text-center">Co-Founder & Front-End Developer</p>
-          </div>
-         </a>
+          <a
+            href="https://github.com/Asadulla56"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+              <img
+                src="https://i.ibb.co.com/t6qbzJV/Screenshot-2025-04-25-120100.png"
+                alt="Asadullah"
+                className="rounded-full w-24 h-24 mb-4 mx-auto"
+              />
+              <h3 className="text-xl font-bold text-white text-center">
+                Asadullah
+              </h3>
+              <p className="text-gray-400 text-center">
+                Co-Founder & Front-End Developer
+              </p>
+            </div>
+          </a>
         </div>
       </section>
-
-      
     </main>
   );
 }
