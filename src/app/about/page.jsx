@@ -32,7 +32,7 @@ export default function AboutPage() {
           performance, and creativity.
         </p>
 
-        <Link href="/about" className="bg-white rounded-full px-7 py-3  ">
+        <Link href="contact" className="bg-white rounded-full px-7 py-3  ">
           <AnimatedShinyText>Contact us </AnimatedShinyText>
         </Link>
       </section>
