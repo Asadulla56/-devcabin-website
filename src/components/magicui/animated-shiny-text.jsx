@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
 
 export const AnimatedShinyText = ({
   children,
@@ -8,6 +9,26 @@ export const AnimatedShinyText = ({
   shimmerWidth = 100,
   ...props
 }) => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return (
+      <span
+        className={cn(
+          "text-neutral-600/70 dark:text-neutral-400/70",
+          className
+        )}
+        {...props}
+      >
+        {children}
+      </span>
+    );
+  }
+
   return (
     <span
       style={{
