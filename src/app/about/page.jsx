@@ -143,7 +143,7 @@ export default function AboutPage() {
                 className="rounded-full w-24 h-24 mb-4 mx-auto"
               />
               <h3 className="text-xl font-bold text-white text-center">
-                Bappi
+               Mubassir Bappi
               </h3>
               <p className="text-gray-400 text-center">Founder & CEO</p>
             </div>
@@ -168,7 +168,7 @@ export default function AboutPage() {
             <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
               <img
                 src="https://i.ibb.co.com/t6qbzJV/Screenshot-2025-04-25-120100.png"
-                alt="Asadullah"
+                alt="Asadulla"
                 className="rounded-full w-24 h-24 mb-4 mx-auto"
               />
               <h3 className="text-xl font-bold text-white text-center">
