@@ -65,7 +65,7 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12 bg-gray-900 text-white">
+    <div className=" mx-auto px-4 py-12 bg-gray-900 text-white">
       <h1 className="text-4xl font-bold text-center mb-4">Our Services</h1>
       <p className="text-center text-lg text-gray-300 mb-12">
         We Build Code With Class — Tailored For Startups & Small Businesses
