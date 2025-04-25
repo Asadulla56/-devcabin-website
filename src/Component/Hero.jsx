@@ -1,7 +1,17 @@
-'use client';
-import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
+"use client";
+import dynamic from "next/dynamic";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Link from "next/link";
+
+const AnimatedShinyText = dynamic(
+  () =>
+    import("@/components/magicui/animated-shiny-text").then(
+      (mod) => mod.AnimatedShinyText
+    ),
+  {
+    ssr: false,
+  }
+);
 
 export default function Hero() {
   return (
@@ -14,18 +24,14 @@ export default function Hero() {
           With Class
         </h2>
         <p className="mt-6 text-gray-300 text-lg md:text-xl max-w-3xl mx-auto">
-          Empowering businesses and creators with fast, modern, and affordable websites 
-          built with clean code and thoughtful design to make the web smarter and more impactful.
+          Empowering businesses and creators with fast, modern, and affordable
+          websites built with clean code and thoughtful design to make the web
+          smarter and more impactful.
         </p>
         <div className="mt-10">
-            
-          <Link
-            href="/about"
-            className="bg-white rounded-full px-7 py-3  "
-          >
-            <AnimatedShinyText >Learn more </AnimatedShinyText> 
+          <Link href="/about" className="bg-white rounded-full px-7 py-3">
+            <AnimatedShinyText>Learn more</AnimatedShinyText>
           </Link>
-          
         </div>
       </div>
     </section>

@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React from "react";
 
 const CalltoAction = () => {
   return (
@@ -7,10 +9,12 @@ const CalltoAction = () => {
         {/* Text Content */}
         <div className="flex-1 text-center lg:text-left space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            Get Smart Updates from <span className="text-indigo-700">DevCabin</span>
+            Get Smart Updates from{" "}
+            <span className="text-indigo-700">DevCabin</span>
           </h1>
           <p className="text-gray-700 text-lg">
-            Join our inner circle for dev insights, launch drops, and clean code vibes. No spam. Ever.
+            Join our inner circle for dev insights, launch drops, and clean code
+            vibes. No spam. Ever.
           </p>
         </div>
 
