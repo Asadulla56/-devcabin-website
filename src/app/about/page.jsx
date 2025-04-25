@@ -130,8 +130,19 @@ export default function AboutPage() {
               className="rounded-full w-24 h-24 mb-4 mx-auto"
             />
             <h3 className="text-xl font-bold text-white text-center">Bappi</h3>
-            <p className="text-gray-400 text-center">Founder & Full Stack Developer</p>
+            <p className="text-gray-400 text-center">Founder & CEO</p>
           </div></a>
+          <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+            <img
+              src="https://i.ibb.co.com/d42pfkvk/Whats-App-Image-2025-04-25-at-18-34-06-caa19e8b.jpg"
+              alt="Azharul"
+              className="rounded-full w-24 h-24 mb-4 mx-auto"
+            />
+            <h3 className="text-xl font-bold text-white text-center">Azharul Haque</h3>
+            <p className="text-gray-400 text-center">Co-Founder & COO</p>
+          </div>
+
+
          <a href="https://github.com/Asadulla56" target="_blank" rel="noopener noreferrer">
          <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
             <img
