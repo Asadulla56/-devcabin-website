@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
+
 import aboutlottie from "../../../public/Animation - 1745506161787.json";
 import aboutlottie2 from "../../../public/Animation - 1745505464078.json";
 
@@ -32,8 +32,8 @@ export default function AboutPage() {
           performance, and creativity.
         </p>
 
-        <Link href="contact" className="bg-white rounded-full px-7 py-3  ">
-          <AnimatedShinyText>Contact us </AnimatedShinyText>
+        <Link href="contact" className="bg-white rounded-full text-blue-400 px-7 py-3  ">
+       Contact us 
         </Link>
       </section>
 
