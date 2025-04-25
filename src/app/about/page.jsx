@@ -123,28 +123,30 @@ export default function AboutPage() {
           <i className="fas fa-users"></i> Our Team
         </h2>
         <div className="grid sm:grid-cols-2 gap-6">
-          <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+         <a href="https://mubashirbappi.netlify.app/"  target="_blank" rel="noopener noreferrer"> <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
             <img
-              src="/path/to/bappi-image.jpg"
+              src="https://i.ibb.co.com/KxV6W9L6/IMG-1075.jpg"
               alt="Bappi"
               className="rounded-full w-24 h-24 mb-4 mx-auto"
             />
-            <h3 className="text-xl font-bold text-white">Bappi</h3>
-            <p className="text-gray-400">Founder & Full Stack Developer</p>
-          </div>
-          <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+            <h3 className="text-xl font-bold text-white text-center">Bappi</h3>
+            <p className="text-gray-400 text-center">Founder & Full Stack Developer</p>
+          </div></a>
+         <a href="https://github.com/Asadulla56" target="_blank" rel="noopener noreferrer">
+         <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
             <img
-              src="/path/to/asadullah-image.jpg"
+              src="https://i.ibb.co.com/t6qbzJV/Screenshot-2025-04-25-120100.png"
               alt="Asadullah"
               className="rounded-full w-24 h-24 mb-4 mx-auto"
             />
-            <h3 className="text-xl font-bold text-white">Asadullah</h3>
-            <p className="text-gray-400">Co-Founder & Front-End Developer</p>
+            <h3 className="text-xl font-bold text-white text-center">Asadullah</h3>
+            <p className="text-gray-400 text-center">Co-Founder & Front-End Developer</p>
           </div>
+         </a>
         </div>
       </section>
 
-      {/* Final Note */}
+      
     </main>
   );
 }
