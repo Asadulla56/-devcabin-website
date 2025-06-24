@@ -10,6 +10,7 @@ import aboutlottie from "../../../public/Animation - 1745506161787.json";
 import aboutlottie2 from "../../../public/Animation - 1745505464078.json";
 
 import Link from "next/link";
+import { MarqueeDemo } from "@/Component/Teams";
 export default function AboutPage() {
   return (
     <main className="bg-black text-white min-h-screen ">
@@ -120,67 +121,21 @@ export default function AboutPage() {
       </section>
 
       {/* Our Team */}
-      <section className="mb-20 relative">
-        <h2
-          className="text-3xl font-semibold mb-6 text-blue-400 flex items-center justify-center gap-3"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <i className="fas fa-users"></i> Our Team
-        </h2>
-        <div className="grid sm:grid-cols-2 gap-6">
-          <a
-            href="https://mubashirbappi.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
-              <img
-                src="https://i.ibb.co.com/KxV6W9L6/IMG-1075.jpg"
-                alt="Bappi"
-                className="rounded-full w-24 h-24 mb-4 mx-auto"
-              />
-              <h3 className="text-xl font-bold text-white text-center">
-               Mubassir Bappi
-              </h3>
-              <p className="text-gray-400 text-center">Founder & CEO</p>
-            </div>
-          </a>
-          <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
-            <img
-              src="https://i.ibb.co.com/d42pfkvk/Whats-App-Image-2025-04-25-at-18-34-06-caa19e8b.jpg"
-              alt="Azharul"
-              className="rounded-full w-24 h-24 mb-4 mx-auto"
-            />
-            <h3 className="text-xl font-bold text-white text-center">
-              Azharul Haque
-            </h3>
-            <p className="text-gray-400 text-center">Co-Founder & COO</p>
-          </div>
-
-          <a
-            href="https://github.com/Asadulla56"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-lg transition">
-              <img
-                src="https://i.ibb.co.com/t6qbzJV/Screenshot-2025-04-25-120100.png"
-                alt="Asadulla"
-                className="rounded-full w-24 h-24 mb-4 mx-auto"
-              />
-              <h3 className="text-xl font-bold text-white text-center">
-                Asadullah
-              </h3>
-              <p className="text-gray-400 text-center">
-                Co-Founder & Front-End Developer
-              </p>
-            </div>
-          </a>
+      <section className="bg-gray-900 py-20">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-semibold mb-8 text-indigo-400">
+            Meet Our Team
+          </h2>
+          <p className="text-gray-400 mb-12">
+            A passionate group of developers, designers, and thinkers dedicated
+            to building the web smarter.
+          </p>
         </div>
-      </section>
+
+      {/* Team Members */}
+ </section>
+      <MarqueeDemo/>
+     
     </main>
   );
 }
